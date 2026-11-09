@@ -1,0 +1,6 @@
+const modal=document.querySelector('.modal');const closeBtn=document.querySelector('.modal-close');
+function openCard(card){document.querySelector('#modal-title').textContent=card.dataset.title;document.querySelector('.modal-role').textContent=card.dataset.role;document.querySelector('.modal-description').textContent=card.dataset.description;document.querySelector('.modal-year').textContent=card.dataset.year;modal.classList.add('open');modal.setAttribute('aria-hidden','false')}
+function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}
+document.querySelectorAll('.project,.cherry-still').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;openCard(card)});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCard(card)}})});
+closeBtn.addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const menu=document.querySelector('.menu');const nav=document.querySelector('.topbar nav');menu.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
