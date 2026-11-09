@@ -1,32 +1,26 @@
-SABRINA TORRES — PORTFOLIO STARTER
+SABRINA TORRES PORTFOLIO — UPDATED SITE FILES
+
+This folder contains the updated portfolio website.
 
 FILES
-- index.html: website content and page structure
-- styles.css: visual design and responsive layout
-- script.js: mobile navigation and current-year footer
-- assets/portrait-placeholder.svg: replace with Sabrina's portrait
+- index.html: page content and project links
+- styles.css: layout, colors, typography, responsive styling
+- script.js: mobile navigation and current year
+- assets/: images, resume PDF, and compressed ABC7 video samples
 
-HOW TO ADD YOUR PORTRAIT
-1. Put your portrait image in the assets folder.
-2. Name it portrait.jpg (or portrait.png).
-3. Open index.html and find:
-   assets/portrait-placeholder.svg
-4. Change that path to:
-   assets/portrait.jpg
+PUBLISHING ON GITHUB PAGES
+1. Open your GitHub repository: sabrinas501/sabrina-torres-portfolio
+2. Open the repository's main page.
+3. Upload/replace the files from this folder into the repository's root.
+   Important: upload index.html, styles.css, script.js, and the assets folder.
+   Do not upload the outer Sabrina_Torres_Portfolio_Starter folder itself.
+4. If GitHub asks whether to replace existing files, confirm the replacements.
+5. Wait for the Pages deployment to finish, then use the repository's "Visit site" button.
 
-HOW TO ADD PROJECTS
-The project areas are intentionally marked for details to add. Replace the placeholder titles/descriptions with confirmed project names, roles, stills, and links. Do not publish placeholders as completed work.
-
-PUBLISH WITH GITHUB PAGES
-1. In your GitHub repository, upload the CONTENTS of this unzipped folder (index.html, styles.css, script.js, README.txt, and assets).
-2. Commit directly to the main branch.
-3. Open repository Settings > Pages.
-4. Under Build and deployment, choose Deploy from a branch.
-5. Select main and /(root), then Save.
-6. Your site should appear at:
-   https://sabrinas501.github.io/sabrina-torres-portfolio/
-
-CONTACT
-Sabrinatorres08017@gmail.com
-
-This is a starter portfolio draft. Review all copy and replace the portrait and project placeholders before sharing it professionally.
+NOTES
+- The four ABC7 video examples are included as compressed MP4 files in assets/videos.
+- The Digital Artisans videos and experimental shorts link to YouTube.
+- Home Sweet Home is represented as a completed project, without a public playback link.
+- Cherry Pie is intentionally not presented as a completed/public project yet.
+- The slate photograph is used in the About section. The separate headshot was supplied as a Sony ARW raw file and is not embedded because browsers do not reliably display that camera format. A JPEG headshot can replace it later.
+- Check that you have permission to publicly display all video samples and work materials before publishing.

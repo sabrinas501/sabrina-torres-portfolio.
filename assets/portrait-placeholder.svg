@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+<rect width="800" height="1000" fill="#d8d0c2"/>
+<circle cx="400" cy="350" r="145" fill="#b9aa98"/>
+<path d="M150 940c20-220 115-345 250-345s230 125 250 345" fill="#9d8f7d"/>
+<text x="400" y="875" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#f5f2eb" letter-spacing="5">ADD PORTRAIT</text>
+</svg>
