@@ -1,0 +1,1 @@
+Added a small On-set Catering section with four user-provided photos. Existing design and portfolio sections preserved. Upload the contents of this ZIP to the repository root.

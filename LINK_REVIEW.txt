@@ -1,0 +1,8 @@
+Confirm whether these existing experimental short links are cleared for public use:
+https://www.youtube.com/watch?v=o5t6AOpwbuI&t=2s
+https://www.youtube.com/watch?v=TxEASve5XWc&t=2s
+https://www.youtube.com/watch?v=WhUypDS6erI&t=2s
+
+Home Sweet Home: viewing URL not supplied.
+Wishbone: no public video until release.
+MFA Google Drive film links already in index.html: verify sharing and permission before publicizing.

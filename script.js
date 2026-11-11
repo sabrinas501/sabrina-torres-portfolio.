@@ -4,3 +4,6 @@ function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hi
 document.querySelectorAll('.project,.cherry-still').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;openCard(card)});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCard(card)}})});
 closeBtn.addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 const menu=document.querySelector('.menu');const nav=document.querySelector('.topbar nav');menu.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+// Skip the opening black frame in the locally hosted ABC7 spots.
+document.querySelectorAll('video[data-start]').forEach(video=>{video.addEventListener('loadedmetadata',()=>{const start=Number(video.dataset.start)||0;if(video.duration>start+0.1){try{video.currentTime=start}catch(e){}}},{once:true});});

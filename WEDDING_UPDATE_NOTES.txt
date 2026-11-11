@@ -1,0 +1,1 @@
+Added two distinct wedding-film Google Drive embeds (second URL was pasted repeatedly). Google Drive preview does not reliably support a forced 1-second start; viewers can seek manually. Film titles not verified, so neutral labels are used. Verify each file has Anyone with the link / Viewer access.
