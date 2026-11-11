@@ -1,14 +1,6 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-  });
-  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
-  }));
-}
-document.getElementById('year').textContent = new Date().getFullYear();
+const modal=document.querySelector('.modal');const closeBtn=document.querySelector('.modal-close');
+function openCard(card){document.querySelector('#modal-title').textContent=card.dataset.title;document.querySelector('.modal-role').textContent=card.dataset.role;document.querySelector('.modal-description').textContent=card.dataset.description;document.querySelector('.modal-year').textContent=card.dataset.year;modal.classList.add('open');modal.setAttribute('aria-hidden','false')}
+function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}
+document.querySelectorAll('.project,.cherry-still').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('a'))return;openCard(card)});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCard(card)}})});
+closeBtn.addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const menu=document.querySelector('.menu');const nav=document.querySelector('.topbar nav');menu.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
